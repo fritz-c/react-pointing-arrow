@@ -1,6 +1,6 @@
 # Webpack React Component Boilerplate
 
-Yet another opinionated React component boilerplate (but with Webkit!).
+Yet another opinionated React component boilerplate (but with Webkit!). Please make it your own - change the license, remove the linter, or maybe even add some functionality.
 
 ### Features
 
@@ -59,4 +59,4 @@ Pull requests are welcome!
 
 ## License
 
-MIT
+[The Unlicense](https://unlicense.org/)
