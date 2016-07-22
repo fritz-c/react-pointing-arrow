@@ -2,7 +2,8 @@
 
 Yet another opinionated React component boilerplate (but with Webkit!).
 
-Features
+### Features
+
 - Webkit-powered component development
     - Local web server (hosted at localhost:3001) + React hot reload
 - Inlined style compiled from SCSS files => no external CSS files for component users
