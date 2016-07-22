@@ -28,7 +28,7 @@
   "authors": [
     "Your Name"
   ],
-  "license": "MIT",
+  "license": "The Unlicense",
   "dependencies": {},
   "peerDependencies": {
     "react": "^15.0.0",
