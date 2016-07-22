@@ -10,7 +10,9 @@ Features
 - Easy github pages deployment with gh-pages
     - [Generated github site demo](https://fritz-c.github.io/webpack-react-component-boilerplate/)
 
-## _Sample README content follows_
+-------------------------------------------------------------------
+
+_Sample README content follows_
 
 ## Example
 
