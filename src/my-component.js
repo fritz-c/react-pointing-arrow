@@ -8,6 +8,14 @@ import React, { Component, PropTypes } from 'react';
 import styles from './style.scss';
 
 class MyComponent extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            key: 'value',
+        };
+    }
+
     render() {
         const {
             myName,
