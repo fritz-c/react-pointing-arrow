@@ -1,9 +1,3 @@
-/*
- * my-component
- * Copyright 20XX Mega Man All rights reserved.
- * @license Open source under the MIT License
- */
-
 import React, { Component, PropTypes } from 'react';
 import styles from './style.scss';
 
