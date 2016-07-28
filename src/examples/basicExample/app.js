@@ -10,8 +10,8 @@ const App = React.createClass({
     render() {
         const projectName = 'My React Component';
         const authorName = 'Your Name';
-        const authorUrl = 'https://github.com/your-name';
-        const githubUrl = 'https://github.com/your-name/my-component';
+        const authorUrl = 'https://github.com/fritz-c';
+        const githubUrl = 'https://github.com/fritz-c/webpack-react-component-boilerplate';
 
         return (
             <div>

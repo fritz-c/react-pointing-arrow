@@ -16,7 +16,7 @@ class MyComponent extends Component {
         } = this.props;
 
         return (
-            <div>Hello <span className={styles.myName}>{myName}</span>!</div>
+            <div>Hello, <span className={styles.myName}>{myName}</span>!</div>
         );
     }
 }
