@@ -1,6 +1,10 @@
 import React, { Component, PropTypes } from 'react';
 import styles from './style.scss';
 
+export function hello(name) {
+    return `Hello ${name}!`;
+}
+
 class MyComponent extends Component {
     constructor(props) {
         super(props);
@@ -16,7 +20,7 @@ class MyComponent extends Component {
         } = this.props;
 
         return (
-            <div>Hello, <span className={styles.myName}>{myName}</span>!</div>
+            <div className={styles.myName}>{hello(myName)}</div>
         );
     }
 }
