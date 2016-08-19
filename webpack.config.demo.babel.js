@@ -40,7 +40,7 @@ module.exports = {
             {
                 test: /\.scss$/,
                 loaders: [
-                    'style-loader',
+                    'style-loader?insertAt=top',
                     'css-loader?modules&importLoaders=1&localIdentName=[local]___[hash:base64:5]',
                     'postcss-loader',
                     'sass-loader',
