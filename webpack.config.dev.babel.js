@@ -19,7 +19,7 @@ module.exports = {
             template: './src/examples/basicExample/index.html'
         }),
         new webpack.EnvironmentPlugin([
-            "NODE_ENV",
+            'NODE_ENV',
         ]),
         new webpack.NoErrorsPlugin(),
     ],

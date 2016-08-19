@@ -30,7 +30,7 @@ module.exports = {
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.EnvironmentPlugin([
-            "NODE_ENV",
+            'NODE_ENV',
         ]),
         new webpack.optimize.UglifyJsPlugin({
             compress: {
