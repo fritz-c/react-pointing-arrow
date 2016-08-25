@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import MyComponent from '../../my-component';
 import styles from './stylesheets/app.scss';
 
-const App = React.createClass({
-    getInitialState() {
-        return {};
-    },
+class App extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {};
+    }
+
     render() {
         const projectName = 'My React Component';
         const authorName = 'Your Name';
@@ -58,6 +61,6 @@ const App = React.createClass({
             </div>
         );
     }
-});
+}
 
 ReactDOM.render(<App />, document.getElementById('app'));
