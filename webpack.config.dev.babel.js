@@ -54,6 +54,13 @@ module.exports = {
     },
     devServer: {
         contentBase: 'build',
-        port: 3001
+        port: 3001,
+        stats: {
+            chunks: false,
+            hash: false,
+            version: false,
+            assets: false,
+            children: false,
+        },
     },
 };
