@@ -1,8 +1,6 @@
-import KarmaCoverage from 'karma-coverage';
 import KarmaJasmine from 'karma-jasmine';
 import KarmaWebpack from 'karma-webpack';
-import KarmaSpecReporter from 'karma-spec-reporter';
-import KarmaJunitReporter from 'karma-junit-reporter';
+import KarmaJasmineHtmlReporter from 'karma-jasmine-html-reporter';
 import KarmaSourcemapLoader from 'karma-sourcemap-loader';
 import KarmaPhantomjsLauncher from 'karma-phantomjs-launcher';
 import KarmaNotifyReporter from 'karma-notify-reporter';
@@ -16,27 +14,20 @@ export default function setConfig(config) {
         preprocessors: {
             'src/tests.js': ['webpack', 'sourcemap']
         },
-        junitReporter: {
-            outputDir: (process.env.CIRCLE_TEST_REPORTS || 'public') + '/karma',
-            suite: 'karma'
-        },
         plugins: [
-            KarmaCoverage,
             KarmaJasmine,
             KarmaWebpack,
-            KarmaSpecReporter,
-            KarmaJunitReporter,
+            KarmaJasmineHtmlReporter,
             KarmaNotifyReporter,
             KarmaSourcemapLoader,
             KarmaPhantomjsLauncher,
         ],
-        reporters: ['progress', 'coverage', 'notify'],
+        reporters: [
+            'progress',
+            'kjhtml',
+            'notify',
+        ],
         webpack: webpackConfig,
-        coverageReporter: {
-            dir: 'coverage',
-            file: 'coverage.json',
-            type: 'json'
-        },
         notifyReporter: {
             reportEachFailure: false, // Default: false, Will notify on every failed spec
             reportSuccess: false, // Default: true, Will notify when a suite was successful
