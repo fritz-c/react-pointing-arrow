@@ -1,1 +1,1 @@
-module.exports = require('./pointing-arrow').default;
+module.exports = require('./react-pointing-arrow').default;

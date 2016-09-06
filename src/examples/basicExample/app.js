@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Arrow from '../../pointing-arrow';
+import Arrow from '../../react-pointing-arrow';
 import styles from './stylesheets/app.scss';
 
 class App extends Component {

@@ -16,7 +16,7 @@
     "test": "cross-env NODE_ENV=test karma start --single-run",
     "test:watch": "cross-env NODE_ENV=test karma start"
   },
-  "main": "dist/umd/my-component.js",
+  "main": "dist/umd/react-pointing-arrow.js",
   "files": [
     "dist"
   ],
@@ -24,8 +24,8 @@
     "type": "git",
     "url": "https://github.com/fritz-c/react-pointing-arrow"
   },
-  "homepage": "https://fritz-c.github.io/my-component",
-  "bugs": "https://github.com/fritz-c/my-component/issues",
+  "homepage": "https://fritz-c.github.io/react-pointing-arrow",
+  "bugs": "https://github.com/fritz-c/react-pointing-arrow/issues",
   "authors": [
     "Chris Fritz"
   ],
