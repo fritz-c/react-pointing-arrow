@@ -1,7 +1,7 @@
 {
-  "name": "my-component",
-  "version": "1.0.0",
-  "description": "My Component built with React.js and Webpack",
+  "name": "react-pointing-arrow",
+  "version": "0.0.1",
+  "description": "An arrow that points at things in react",
   "scripts": {
     "build": "npm run lint && npm run test && npm run build:demo && npm run build:umd",
     "build:demo": "npm run clean:demo && cross-env NODE_ENV=production webpack --config webpack.config.demo.babel.js --bail",
@@ -22,15 +22,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/fritz-c/webpack-react-component-boilerplate"
+    "url": "https://github.com/fritz-c/react-pointing-arrow"
   },
-  "homepage": "https://your-name.github.io/my-component",
-  "bugs": "https://github.com/your-name/my-component/issues",
+  "homepage": "https://fritz-c.github.io/my-component",
+  "bugs": "https://github.com/fritz-c/my-component/issues",
   "authors": [
-    "Your Name"
+    "Chris Fritz"
   ],
   "license": "Unlicense",
-  "dependencies": {},
+  "dependencies": {
+    "react-tether": "^0.5.2"
+  },
   "peerDependencies": {
     "react": "^15.0.0",
     "react-dom": "^15.0.0"

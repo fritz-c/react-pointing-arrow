@@ -1,1 +1,1 @@
-module.exports = require('./my-component').default;
+module.exports = require('./pointing-arrow').default;

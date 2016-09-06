@@ -1,3 +1,41 @@
-.myName {
-    font-weight: bold;
+$border-size: 15px;
+$mycolor: red;
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translate(0, 0); }
+    40%, 60% { transform: translate(0, 20px); }
+}
+
+@keyframes bounce-top {
+    0%, 20%, 50%, 80%, 100% { transform: translate(0, 0); }
+    40%, 60% { transform: translate(0, -20px); }
+}
+
+.arrow {
+    height: 0;
+    opacity: 0.5;
+    border-left: $border-size solid transparent;
+    border-right: $border-size solid transparent;
+    border-bottom: $border-size solid $mycolor;
+    animation: bounce 1.5s infinite;
+
+    :global(.reactpa-pinned-bottom) > &, :global(.reactpa-abutted-top) > & {
+        animation: bounce-top 1.5s infinite;
+        border-top: $border-size solid $mycolor;
+        border-bottom: none;
+    }
+
+    &::after {
+        content: '';
+        background-color: $mycolor;
+        position: absolute;
+        transform: translate(-50%, 100%);
+        width: $border-size;
+        height: $border-size;
+
+        :global(.reactpa-pinned-bottom) > &, :global(.reactpa-abutted-top) > & {
+            top: auto;
+            transform: translate(-50%, -200%);
+        }
+    }
 }

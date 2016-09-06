@@ -3,8 +3,14 @@
 
 .main-content {
     box-sizing: border-box;
+    padding-top: 16rem;
 }
 
 .page-header {
     padding: 1rem 6rem;
+    height: 15rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }

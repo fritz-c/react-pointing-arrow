@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import MyComponent from '../../my-component';
+import Arrow from '../../pointing-arrow';
 import styles from './stylesheets/app.scss';
 
 class App extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {};
+        this.state = {
+            arrowOn: true,
+        };
     }
 
     render() {
-        const projectName = 'My React Component';
-        const authorName = 'Your Name';
+        const projectName = 'React Pointing Arrow';
+        const authorName = 'Chris Fritz';
         const authorUrl = 'https://github.com/fritz-c';
-        const githubUrl = 'https://github.com/fritz-c/webpack-react-component-boilerplate';
+        const githubUrl = 'https://github.com/fritz-c/react-pointing-arrow';
 
         return (
             <div>
@@ -28,13 +30,44 @@ class App extends Component {
 
                 <section className={styles['main-content']}>
                     <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
 
-                    <MyComponent myName={authorName} />
+                    <Arrow show={this.state.arrowOn}>
+                        <input />
+                    </Arrow>
+
+                    <button onClick={() => this.setState({ arrowOn: !this.state.arrowOn })}>
+                        Toggle Arrow
+                    </button>
+
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
+                    <h3>Demo</h3>
 
                     <h3>Features</h3>
                     <ul>
-                        <li>Excels at displaying an enthusiastic greeting</li>
-                        <li>No external CSS</li>
+                        <li>Points at things</li>
+                        <li>Uses react-tether (which uses Tether)</li>
                     </ul>
 
                     <a href={githubUrl}>Documentation on Github</a>

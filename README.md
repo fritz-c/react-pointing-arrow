@@ -9,7 +9,7 @@ Yet another opinionated React component boilerplate (but with Webkit!). Please m
 - Inlined style compiled from SCSS files => no external CSS files for component users
 - Set up for Babel / ES6
 - Easy github pages deployment with gh-pages
-    - [Generated github site demo](https://fritz-c.github.io/webpack-react-component-boilerplate/)
+    - [Generated github site demo](https://fritz-c.github.io/react-pointing-arrow/)
 
 -------------------------------------------------------------------
 
