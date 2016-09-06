@@ -4,7 +4,6 @@ import styles from './style.scss';
 
 class Arrow extends Component {
     render() {
-        console.log('ctodo((((styles.flippedArrow))))', styles.flippedArrow);
         const {
             children,
             show,
